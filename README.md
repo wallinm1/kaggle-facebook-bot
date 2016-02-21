@@ -11,8 +11,15 @@ The .csv-files of predictions can be generated as follows:
 
 **Libraries:**
 
-The basic scientific Python libraries + XGBoost 
+The basic scientific Python libraries + XGBoost
 
-**Running times/Hardware:**
+**Running time/Hardware:**
 
 Runs in about 15 minutes on a fairly high-powered desktop (i7-4790) with 16 gb of RAM. Can clog up the ram on smaller machines.
+
+**Update Feb 21st 2016**
+
+- Added a `Model interpretation`-section to the notebook
+- Added a `hyperopt_xgb.py`-script that shows how hyperparameters can be optimized using a grid search.
+  - The script generates a file `hyperopt_xgb.csv` in the root of the repository which displays a selection of hyperparameters and the corresponding cross-validated `AUC`-score.
+  - Running the script requires two additional dependencies: the `hyperopt`- and `pymongo`-libraries.
